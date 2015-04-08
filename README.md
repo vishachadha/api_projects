@@ -149,8 +149,8 @@ Your job is to get a latitude and a longitude from the user and tell them the cu
 When I run your program from the command line with `ruby coords_to_weather.rb`, if I type in `41.78` and `-87.59`, I should see something like
 
     The current temperature at 41.78, -87.59 is 46.6 degrees.
-    The outlook for the rest of the hour is: Clear for the hour.
-    The outlook for the rest of the day is: Mostly cloudy starting tomorrow morning.
+    The outlook for the next 60 minutes is: Clear for the hour.
+    The outlook for the next 24 hours is: Mostly cloudy starting tomorrow morning.
     The outlook for the rest of the week is: No precipitation throughout the week, with temperatures rising to 64°F on Saturday.
     
 #### Address to Weather
@@ -158,8 +158,8 @@ When I run your program from the command line with `ruby coords_to_weather.rb`, 
 Finally, pull it all together in `address_to_weather.rb`. Use both the Google Geocoding API and the Forecast API so that if I run your program from the command line with `ruby address_to_weather.rb`, if I type in `5807 S Woodlawn Ave`, I should see something like
 
     The current temperature at 5807 S Woodlawn Ave is 46.6 degrees.
-    The outlook for the rest of the hour is: Clear for the hour.
-    The outlook for the rest of the day is: Mostly cloudy starting tomorrow morning.
+    The outlook for the next 60 minutes is: Clear for the hour.
+    The outlook for the next 24 hours is: Mostly cloudy starting tomorrow morning.
     The outlook for the rest of the week is: No precipitation throughout the week, with temperatures rising to 64°F on Saturday.
 
 #### Submission
