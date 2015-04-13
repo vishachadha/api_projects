@@ -14,15 +14,15 @@ street_address = gets.chomp
 
 # Replaces spaces and other URL-illegal characters in the string
 url_safe_street_address = URI.encode(street_address)
-puts "test: Safe street address- #{url_safe_street_address}"
-puts "#{url_safe_street_address.class}"
+#puts "test: Safe street address- #{url_safe_street_address}"
+#puts "#{url_safe_street_address.class}"
 
 # Your code goes below. Hints:
 
 url_of_data_we_want = "http://maps.googleapis.com/maps/api/geocode/json?address=#{url_safe_street_address}"
-puts "test: url of data we want is #{url_of_data_we_want}"
+#puts "test: url of data we want is #{url_of_data_we_want}"
 raw_data = open(url_of_data_we_want).read
-puts "test: printing raw_data #{raw_data}"
+#puts "test: printing raw_data #{raw_data}"
 parsed_data = JSON.parse(raw_data)
 
 # # # ...
